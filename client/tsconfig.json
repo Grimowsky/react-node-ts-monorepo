@@ -1,6 +1,6 @@
 {
+  "extends": "../tsconfig.common.json",
   "compilerOptions": {
-    "extends": "../tsconfig.common.json",
     "target": "ESNext",
     "useDefineForClassFields": true,
     "lib": ["DOM.Iterable"],
