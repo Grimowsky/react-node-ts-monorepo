@@ -25,14 +25,14 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: Install backend dependencies
-        run: npm ci workspace server
+        run: npm ci --workspace=server
 
       - name: Lint backend code
-        run: npm run lint workspace server
+        run: npm run lint --workspace=server
 
       - name: Execute backend tests cases
-        run: npm run test:coverage workspace server
+        run: npm run test:coverage --workspace=server
 
       - name: Build backend
-        run: npm run -s build workspace server
+        run: npm run -s build --workspace=server
 
