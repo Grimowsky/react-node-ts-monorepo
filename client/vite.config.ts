@@ -7,7 +7,11 @@ export default defineConfig({
     plugins: [react(), svgr()],
     server: {
         host: true,
-        port: 3000
+        port: 3000,
+        watch: {
+            usePolling: true,
+            interval: 500
+        }
     },
     preview: {
         host: true,

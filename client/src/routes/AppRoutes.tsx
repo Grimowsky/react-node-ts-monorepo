@@ -5,7 +5,7 @@ import { NavigateTest } from '../components/NavigateTest/NavigateTest';
 export const AppRoutes = (): React.ReactElement => {
   return (
     <Routes>
-      <Route path={routes.BASE_ROUTE} element={<>hello there</>} />
+      <Route path={routes.BASE_ROUTE} element={<>elegancko dziala kierowniku</>} />
       <Route path={'/hello'} element={<NavigateTest />} />
     </Routes>
   );
