@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "monorepo with react and nodeJS",
   "main": "index.js",
+  "workspaces": ["server/"],
   "scripts": {},
   "repository": {
     "type": "git",
