@@ -8,9 +8,7 @@ export const AppRoutes = (): React.ReactElement => {
       <Route
         path={routes.BASE_ROUTE}
         element={
-          <div className={'h-screen text-black-500 text-2xl'}>
-            hello there dd
-          </div>
+          <div className={'h-screen text-black-500 text-2xl'}>hello there</div>
         }
       />
     </Routes>
