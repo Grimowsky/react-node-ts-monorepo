@@ -14,7 +14,7 @@ export default defineConfig({
         setupFiles: './testSetup.js',
         coverage: {
             provider:'istanbul',
-            reporter: ['text', 'json', 'html'],
+            reporter: ['text', 'json', 'html', 'lcov'],
         }
     },
 })

@@ -21,7 +21,7 @@ module.exports = {
         '^.+\\.(ts|tsx)$': 'ts-jest',
     },
     coverageReporters: ['json', 'lcov', 'text', 'clover'],
-    coverageDirectory: 'reports/coverage',
+    coverageDirectory: 'coverage',
     roots: ['<rootDir>'],
     modulePaths: [compilerOptions.baseUrl],
     moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {
