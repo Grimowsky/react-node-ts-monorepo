@@ -1,19 +1,14 @@
 {
   "compilerOptions": {
+    "extends": "../tsconfig.common.json",
     "module": "CommonJS",
     "target": "ESNext",
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "lib": ["ESNext", "dom"],
     "outDir": "lib",
     "rootDir": ".",
     "removeComments": true,
-    "strict": true,
     "noImplicitAny": true,
-    "moduleResolution": "node",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "forceConsistentCasingInFileNames": true,
     "baseUrl": "./src",
     "types": ["@types/jest"],
     "paths": {
