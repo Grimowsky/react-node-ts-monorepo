@@ -25,7 +25,7 @@ services:
     environment:
       - DATABASE_URL=postgresql://postgres:@postgres:5432/postgres?schema=public&connect_timeout=3000
 
-  backend-app:
+  backend:
     depends_on:
       postgres:
         condition: service_healthy
@@ -42,3 +42,16 @@ services:
       - PORT="8080"
       - DATABASE_URL=postgresql://postgres:@postgres:5432/postgres?schema=public&connect_timeout=3000
       - JWT_SECRET=82BE286AE0014A5E7476F17C3E37A06FE366CDC8EDA3E66BFF7265F9320AA294
+
+  frontend:
+    build:
+      context: client
+      target: dev
+    volumes:
+      - ./client/src:/app/src
+    command: "npm run dev"
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT="3000"
+      - VITE_API_URL=http://localhost:8080
